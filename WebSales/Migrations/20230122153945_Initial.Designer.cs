@@ -9,8 +9,8 @@ using WebSales.Data;
 namespace WebSales.Migrations
 {
     [DbContext(typeof(WebSalesContext))]
-    [Migration("20230122044024_OtherEntities")]
-    partial class OtherEntities
+    [Migration("20230122153945_Initial")]
+    partial class Initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -48,7 +48,7 @@ namespace WebSales.Migrations
 
                     b.HasIndex("SellerId");
 
-                    b.ToTable("SelesRecord");
+                    b.ToTable("SalesRecord");
                 });
 
             modelBuilder.Entity("WebSales.Models.Seller", b =>

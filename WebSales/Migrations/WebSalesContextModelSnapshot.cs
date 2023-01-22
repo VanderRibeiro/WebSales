@@ -46,7 +46,7 @@ namespace WebSales.Migrations
 
                     b.HasIndex("SellerId");
 
-                    b.ToTable("SelesRecord");
+                    b.ToTable("SalesRecord");
                 });
 
             modelBuilder.Entity("WebSales.Models.Seller", b =>
